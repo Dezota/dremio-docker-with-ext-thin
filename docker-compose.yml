@@ -3,7 +3,7 @@ version: "2"
 services:
   dremio:
     restart: always
-    image: dezota/dremio-oss-with-ext-thin:20.1.0-10
+    image: dezota/dremio-oss-with-ext-thin:20.1.0-11
 #    build: ./build
     hostname: dremio
     environment:
