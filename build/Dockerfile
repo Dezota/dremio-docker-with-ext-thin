@@ -21,7 +21,7 @@ RUN \
     set -xeu && \
     yum -y -q install https://cdn.azul.com/zulu/bin/zulu-repo-1.0.0-1.noarch.rpm && \
     yum -y -q install zulu11-jdk less && \
-    yum -y -q install https://dl.dezota.com/dremio-docker-with-extensions/20.1.0/build-11/dremio-community-20.1.0-202202061055110045_36733c65_1.noarch.rpm && \
+    yum -y -q install https://dl.dezota.com/dremio-docker-with-extensions/21.1.1/build-1/dremio-community-21.1.1-202204292111390812_57b1832f_1.noarch.rpm && \
     yum -y -q install https://download.dremio.com/odbc-driver/1.5.4.1002/dremio-odbc-1.5.4.1002-1.x86_64.rpm && \
     yum -q clean all && \
     rm -rf /var/cache/yum
