@@ -11,7 +11,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-FROM registry.access.redhat.com/ubi8/ubi
+FROM almalinux:8.6
 
 # who's your boss?
 MAINTAINER "Brian Holman" <bholman@dezota.com>
@@ -22,6 +22,7 @@ RUN \
     yum -y -q install https://cdn.azul.com/zulu/bin/zulu-repo-1.0.0-1.noarch.rpm && \
     yum -y -q install zulu11-jdk less && \
     yum -y -q install https://dl.dezota.com/dremio-docker-with-extensions/22.0.0/dremio-community-22.0.0-202206221430090603_1fa4049f_1.noarch.rpm && \
+    yum -y -q install https://download.dremio.com/arrow-flight-sql-odbc-driver/arrow-flight-sql-odbc-driver-LATEST.x86_64.rpm && \
     yum -q clean all && \
     rm -rf /var/cache/yum
 COPY ./startup.sh /opt/dremio/bin/startup.sh

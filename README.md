@@ -25,7 +25,7 @@ This docker build doesn't do the actual compiling of the patched Dremio or
 the two extensions  unlike this
 [build](https://github.com/Dezota/dremio-docker-with-extensions).  It takes
 a complete RPM package from the other docker build and installs it in a
-small *RedHat Universal Binary Image 8* leading to a 40% smaller image.
+small *Alma Linux 8.6* leading to a 40% smaller image.
 
 ## Building and Running Docker Image
 
@@ -41,12 +41,12 @@ make run
 
 Get the image from Docker HUB:
 ```
-docker pull dezota/dremio-oss-with-ext-thin:22.0.0-1
+docker pull dezota/dremio-oss-with-ext-thin:22.0.0-2
 ```
 
 Here is the digest for the this version on hub.docker.com:
 ```
-22.0.0-1: digest: sha256:c309b63dc838c794db9b35189386f994e87eec64f2355f7edfe0f9c1e5d0b300 size: 1578
+22.0.0-2: digest: sha256:9a5696253ec759bfcd77d49be668f8e0bd5dd88fe305333717763c75324af16f size: 1370
 ````
 
 *Comment out build line in docker-compose.yml:*
