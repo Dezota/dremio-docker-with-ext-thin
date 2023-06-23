@@ -21,7 +21,7 @@ RUN \
     set -xeu && \
     yum -y -q install https://cdn.azul.com/zulu/bin/zulu-repo-1.0.0-1.noarch.rpm && \
     yum -y -q install zulu11-jdk less && \
-    yum -y -q install https://dl.dezota.com/dremio-docker-with-extensions/24.0.0/dremio-community-24.0.0-202302100528110223_3a169b7c_1.noarch.rpm && \
+    yum -y -q install https://dl.dezota.com/dremio-docker-with-extensions/24.1.0/dremio-community-24.1.0-202306130653310132_d30779f6_1.noarch.rpm && \
     yum -y -q install https://download.dremio.com/arrow-flight-sql-odbc-driver/arrow-flight-sql-odbc-driver-LATEST.x86_64.rpm && \
     yum -q clean all && \
     rm -rf /var/cache/yum
